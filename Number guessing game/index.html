@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- HTML Tags -->
+  <div class="container_1">
+    <div class="container_2">
+      <div class="header">
+        <h4>Guess the number from 1 to 100</h4>
+      </div>
+      <div id="hint">Try it</div>
+      <div class="container_3">
+        <form method="post">
+          <input id="val" type="number" name="guess_value" placeholder="--" required>
+        </form>
+        <div class="submit_btn">
+          <button class="btn btn-dark btn-md" id="check_btn"type="submit" onclick="check()">Check</button>
+        </div>
+      </div>
+      <div id="attempt">Attempt : 0 </div>
+    </div>
+  </div>
+  
+  <!-- External Js-->
+  <script src="./test.js"></script>
+</body>
+</html>
